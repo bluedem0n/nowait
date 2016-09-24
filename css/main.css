@@ -1,20 +1,100 @@
 * {
-	margin: 0;
-	padding: 0;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    vertical-align: top;
 }
- 
 body {
-	background: #FAFAFA;
-	font-family: 'Raleway', sans-serif;
-	font-size: 16px;
+     background-color: black;
+}
+.page {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    background-color: black;
+    color: #d9cfab;
 }
 
-
-.wrap {
-	margin: auto;
-	max-width: 800px;
-	width: 90%;
+#intro {
+    display: none;
 }
+
+#selection {
+    overflow: auto;
+}
+#selection .slider {
+    background-position: 0px -180px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 10400px;
+    height: 768px;
+    background-image: url(../img/background.png);
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+/* Menu */
+#menu {
+    position: fixed;
+    left: 5px;
+    top: 0;
+    padding: 25px 0 0 17px;
+    width: 194px;
+    z-index: 10;
+    -webkit-transition: -webkit-transform 250ms ease-out;
+    -moz-transition: -moz-transform 250ms ease-out;
+    transition: transform 250ms ease-out
+}
+#menu ul {
+    list-style-type: decimal;
+    list-style-position: inside;
+}
+#menu li {
+    width: 140px;
+    border-top: 1px dotted #d9cfab;
+    font-size: 14px;
+    font-family: 'Courier New', monospace;
+    position: relative;
+    padding-top: 2px;
+}
+.menu li a {
+    position: absolute;
+    left: 22px;
+    top: 6px;
+    font-size: 23px;
+    line-height: 21px;
+    font-weight: normal;
+    font-family: "";
+}
+#menu li:hover {
+    color: black;
+    border-top-color: #d9cfab;
+}
+
+.logo {
+    position: absolute;
+    left: 353px;
+    top: 96px;
+    width: 619px;
+    height: 364px;
+    background-image: url(../img/logo.png);
+}
+
+/* Manipulando el Boostrap */
+
+.nav>li>a{
+    padding: 10px 15px;
+}
+.nav>li>a:hover {
+    background-color: black !important;
+    padding: 10px 15px;
+}
+
