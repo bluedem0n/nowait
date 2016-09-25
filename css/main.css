@@ -1,100 +1,114 @@
-* {
+/* ===================================================
+    Pagina Principal 
+   =================================================== */
+
+.principal-metropolitano {
+  background: url(../img/background.png) no-repeat center center;
+  padding: 20px 10px 60px 10px;
+  height: 100vh;
+  overflow: hidden;
+  background-size: cover;
+}
+
+.listo {
+    position: absolute;
+    left: 0;
+    top: 400px;
+    right: 0;
+    height: 59px;
+    background-image: url(../img/listo.png);
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+}
+/* Menu */
+.menu-vertical a{
+    font-size: 20px !important;
+    color:#d9cfab;
+}
+.menu-vertical a:hover{
+    font-size: 20px !important;
+    color:#d9cfab;
+}
+nav {
+    font-size: 2.0em;
+    line-height: 0.5em;
+    color: white;
+    width:7em;
+    height: 12.5em;
+    position:absolute;
+    top:0; 
+    bottom:0;
+    margin:auto;
+    left: -5em;
+}
+
+nav ul {
+    list-style: none;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    font-size: 16px;
-    font-family: 'Arial', sans-serif;
-    vertical-align: top;
-}
-body {
-     background-color: black;
-}
-.page {
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    padding: 20px;
-    background-color: black;
-    color: #d9cfab;
 }
 
-#intro {
-    display: none;
-}
-
-#selection {
-    overflow: auto;
-}
-#selection .slider {
-    background-position: 0px -180px;
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 10400px;
-    height: 768px;
-    background-image: url(../img/background.png);
-    background-repeat: no-repeat;
-    overflow: hidden;
-}
-
-/* Menu */
-#menu {
-    position: fixed;
-    left: 5px;
-    top: 0;
-    padding: 25px 0 0 17px;
-    width: 194px;
-    z-index: 10;
-    -webkit-transition: -webkit-transform 250ms ease-out;
-    -moz-transition: -moz-transform 250ms ease-out;
-    transition: transform 250ms ease-out
-}
-#menu ul {
-    list-style-type: decimal;
-    list-style-position: inside;
-}
-#menu li {
-    width: 140px;
-    border-top: 1px dotted #d9cfab;
-    font-size: 14px;
-    font-family: 'Courier New', monospace;
+nav ul li {
+    background-color: blue;
+    height: 1.5em;
+    padding: 0.40em;
     position: relative;
-    padding-top: 2px;
+    width: 100%;
+    border-top-right-radius: 0.75em;
+    border-bottom-right-radius: 0.75em;
+    -webkit-transition: -webkit-transform 500ms, background-color 500ms, color 500ms;
+    transition: transform 500ms, background-color 500ms, color 500ms;
 }
-.menu li a {
+
+nav ul li:nth-child(1) { background-color: #d9cfab; margin-bottom: 10px;}
+nav ul li:nth-child(2) { background-color: #d9cfab; margin-bottom: 10px;}
+nav ul li:nth-child(3) { background-color: #d9cfab; margin-bottom: 10px;}
+nav ul li:nth-child(4) { background-color: #d9cfab; margin-bottom: 10px;}
+
+nav ul li:hover {
+    background-color: black;
+    -webkit-transform: translateX(5em);
+    transform: translateX(5em);
+}
+nav ul li span {
+    display:block;
     position: absolute;
-    left: 22px;
-    top: 6px;
-    font-size: 23px;
-    line-height: 21px;
-    font-weight: normal;
-    font-family: "";
+    font-size:1.5em;
+    line-height: 1.25em;
+    height:1.0em;
+    top:0; bottom:0;
+    margin:auto;
+    right: 0.16666666666667em;
+    color: #F8F6FF;
 }
-#menu li:hover {
-    color: black;
-    border-top-color: #d9cfab;
+/* Iconos Menu */
+
+.paradero{
+    height: 32px;
+    width: 29px;
+    margin-right: 10px;
+    margin-bottom: 16px;
+}
+.game{
+   height: 32px;
+    width: 29px;
+    margin-right: 10px;
+    margin-bottom: 16px;
+}
+.ranking{
+    height: 32px;
+    width: 29px;
+    margin-right: 10px;
+    margin-bottom: 16px;
+}
+.premios{
+    height: 32px;
+    width: 29px;
+    margin-right: 10px;
+    margin-bottom: 16px;
 }
 
-.logo {
-    position: absolute;
-    left: 353px;
-    top: 96px;
-    width: 619px;
-    height: 364px;
-    background-image: url(../img/logo.png);
+.logo{
+    width: 130px;
+    height: 35px;
 }
-
-/* Manipulando el Boostrap */
-
-.nav>li>a{
-    padding: 10px 15px;
-}
-.nav>li>a:hover {
-    background-color: black !important;
-    padding: 10px 15px;
-}
-
