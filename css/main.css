@@ -201,7 +201,7 @@ nav ul li span {
     margin-bottom: 16px;
 }
 .game{
-   height: 32px;
+    height: 32px;
     width: 29px;
     margin-right: 10px;
     margin-bottom: 16px;
@@ -312,8 +312,13 @@ hr.line {
 }
 
 /*---------------Drag and Drop-------------------*/
+.juego {
+  background: url("") #231f20 no-repeat center center fixed;
+  min-height: 663px;
+  background-color: #da2329;
+  background-size: cover;
 
-
+}
 
 /* Footer */
 
