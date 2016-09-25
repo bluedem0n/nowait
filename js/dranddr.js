@@ -1,65 +1,59 @@
+  /* Variables Drag and Drop */
+    var cuadro1 = document.getElementById("cuadro1");
+    var cuadro2 = document.getElementById("cuadro2");
+    var arrastrable1 = document.getElementById("arrastrable1");
+    var arrastrable2 = document.getElementById("arrastrable2");
+    var arrastrable3 = document.getElementById("arrastrable3");
 
-contador = 0; // Variable global para tener poder poner un id unico a cada elemento cuando se clona.
-var arrastrable1 = document.getElementById("arrastrable1");
-		function start(e) {
-			e.dataTransfer.effecAllowed = 'move'; // Define el efecto como mover (Es el por defecto)
-			e.dataTransfer.setData("Data", e.target.id); // Coje el elemento que se va a mover
-			e.dataTransfer.setDragImage(e.target, 0, 0); // Define la imagen que se vera al ser arrastrado el elemento y por donde se coje el elemento que se va a mover (el raton aparece en la esquina sup_izq con 0,0)
-			e.target.style.opacity = '0.4';
+		function start(elemento) {
+			elemento.dataTransfer.effecAllowed = 'move';
+			elemento.dataTransfer.setData("data", elemento.target.id);
+			elemento.dataTransfer.setDragImage(elemento.target, 0, 0);
+			elemento.target.style.opacity = '0.4';
+		}
+		function end(elemento){
+			elemento.target.style.opacity = '';
+			elemento.dataTransfer.clearData("data");
 		}
 
-		function end(e){
-			e.target.style.opacity = ''; // Pone la opacidad del elemento a 1
-			e.dataTransfer.clearData("Data");
+		function enter(elemento) {
+			elemento.target.style.border = '3px dotted #555';
 		}
 
-		function enter(e) {
-			e.target.style.border = '3px dotted #555';
+		function leave(elemento) {
+			elemento.target.style.border = '';
 		}
 
-		function leave(e) {
-			e.target.style.border = '';
-		}
+		function over(elemento) {
+			var elemArrastrable = elemento.dataTransfer.getData("data");
+			var id = elemento.target.id;
 
-		function over(e) {
-			var elemArrastrable = e.dataTransfer.getData("Data"); // Elemento arrastrado
-			var id = e.target.id; // Elemento sobre el que se arrastra
-
-			// return false para que se pueda soltar
 			if (id == 'cuadro1'){
-				return false; // Cualquier elemento se puede soltar sobre el div destino 1
+				return false;
 			}
 
 			if ((id == 'cuadro2') && (elemArrastrable != 'arrastrable3')){
-				return false; // En el cuadro2 se puede soltar cualquier elemento menos el elemento con id=arrastrable3
+				return false;
 			}
 
 		}
+		function drop(elemento){
 
-		/**
-		*
-		* Mueve el elemento
-		*
-		**/
-		function drop(e){
-
-			var elementoArrastrado = e.dataTransfer.getData("Data"); // Elemento arrastrado
-			e.target.appendChild(document.getElementById(elementoArrastrado));
-			e.target.style.border = '';  // Quita el borde
-			tamContX = $('#'+e.target.id).width();
-			tamContY = $('#'+e.target.id).height();
+			var elementoArrastrado = elemento.dataTransfer.getData("data"); // Elemento arrastrado
+			elemento.target.appendChild(document.getElementById(elementoArrastrado));
+			elemento.target.style.border = '';  // Quita el borde
+			tamContX = $('#'+elemento.target.id).width();
+			tamContY = $('#'+elemento.target.id).height();
 
 			tamElemX = $('#'+elementoArrastrado).width();
 			tamElemY = $('#'+elementoArrastrado).height();
 
-			posXCont = $('#'+e.target.id).position().left;
-			posYCont = $('#'+e.target.id).position().top;
+			posXCont = $('#'+elemento.target.id).position().left;
+			posYCont = $('#'+elemento.target.id).position().top;
 
-			// Posicion absoluta del raton
-			x = e.layerX;
-			y = e.layerY;
+			x = elemento.layerX;
+			y = elemento.layerY;
 
-			// Si parte del elemento que se quiere mover se queda fuera se cambia las coordenadas para que no sea asi
 			if (posXCont + tamContX <= x + tamElemX){
 				x = posXCont + tamContX - tamElemX;
 			}
@@ -73,23 +67,22 @@ var arrastrable1 = document.getElementById("arrastrable1");
 			document.getElementById(elementoArrastrado).style.top = y + "px";
 		}
 
+    /* Eventos */
+    cuadro1.ondragenter = enter;
+    cuadro1.ondragover = over;
+    cuadro1.ondragleave = leave;
+    cuadro1.ondrop = drop;
 
-//Conectamos los eventos
-//ondragover - Al mover sobre la lista
-document.getElementById('cuadro1').ondragenter = enter;
-document.getElementById('cuadro1').ondragover = over;
-document.getElementById('cuadro1').ondragleave = leave;
-document.getElementById('cuadro1').ondrop = drop;
-//ondragstart - Al empezar a arrastrar
-document.getElementById('arrastrable1').ondragstart = start;
-document.getElementById('arrastrable1').ondragend = end;
-//ondragstart - Al empezar a arrastrar
-document.getElementById('arrastrable2').ondragstart = start;
-document.getElementById('arrastrable2').ondragend = end;
-//ondragstart - Al empezar a arrastrar
-document.getElementById('arrastrable3').ondragstart = start;
-document.getElementById('arrastrable3').ondragend = end;
-//ondrop - Al soltar
-document.getElementById('cuadro2').ondrop = drop;
-document.getElementById('cuadro2').ondragover = over;
-document.getElementById('cuadro2').onleave = leave;
+    arrastrable1.ondragstart = start;
+    arrastrable1.ondragend = end;
+
+    arrastrable2.ondragstart = start;
+    arrastrable2.ondragend = end;
+
+    arrastrable3.ondragstart = start;
+    arrastrable3.ondragend = end;
+
+    cuadro2.ondrop = drop;
+    cuadro2.ondragover = over;
+    cuadro2.onleave = leave;
+
