@@ -1,0 +1,23 @@
+.load-contenedor{
+  width:100vw;
+  height:100vh;
+  visibility:hidden;
+  transition:all 0.6s ease;
+}
+.porcentaje {
+  width: 4em;
+  height: 4em;
+  margin-left: 20%;
+  line-height: 4em;
+  text-align: center;
+  font-size: 3.5em;
+  font-family: monospace;
+  font-weight: 300;
+  color: white;
+}
+
+.visible{
+  visibility:visible !important;
+  opacity:1 !important;
+  transition:all 0.6s ease;
+}
