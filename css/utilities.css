@@ -95,6 +95,9 @@ a:hover, a:focus {
 	border-color: #fdc05d;
 	color: #fdc05d;
 }
+.opacidad {
+    opacity: 0;
+}
 /*------------------Botones---------------------*/
 .btn:focus {
   outline: 0px auto -webkit-focus-ring-color;

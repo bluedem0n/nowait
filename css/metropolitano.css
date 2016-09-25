@@ -65,13 +65,62 @@ p {
 	margin-top: 6px;
 }
 
+/* Seccion Loading */
 #loading {
   background: url() #231f20 no-repeat center center fixed;
-  min-height: 640px;
+  min-height: 663px;
   background-color: #da2329;
   background-size: cover;
     
 }
+#loading .percentage {
+    position: absolute;
+    left: 50%;
+    margin-left: -273px;
+    top: 457px;
+    width: 546px;
+    border-top: 2px solid #f5f7cc;
+    color: #f5f7cc;
+    text-align: center;
+    padding-top: 35px;
+}
+#loading ul {
+    position: absolute;
+    left: 0;
+    top: 570px;
+    right: 0;
+}
+#loading li {
+    width: 320px;
+    height: 105px;
+    float: left;
+    padding-left: 120px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    padding-top: 20px;
+    list-style: none;
+}
+#loading li:nth-child(1) {
+    background-image: url(../img/mouse.png);
+}
+#loading li:nth-child(2) {
+    background-image: url(../img/zombies.png)
+}
+#loading li:nth-child(3) {
+    background-image: url(../img/clock.png);
+}
+
+#loading .listo {
+    position: absolute;
+    left: 0;
+    top: 372px;
+    right: 0;
+    height: 59px;
+    background-image: url(../img/listo.png);
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+}
+
 hr.line {
 	width: 100%;
 	border: 2px solid;
@@ -143,10 +192,6 @@ hr.line {
     top: 25px;
 }
 }
-
-
-
-
 
 #invite {
   background: #f2f2f2;
