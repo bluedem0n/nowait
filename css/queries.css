@@ -1,60 +1,50 @@
 /* ==========================================================================
    Responsive
    ========================================================================== */
+
+
 /* Landscape phones and down */
+
 @media (max-width: 480px) {
-
-.btn-lg {
-  font-size: 12.5px;
-  line-height: 1.33;
-  padding: 16px 13px;
-  letter-spacing: 0px;
+	.btn-lg {
+		font-size: 12.5px;
+		line-height: 1.33;
+		padding: 16px 13px;
+		letter-spacing: 0px;
+	}
+	.btn-wide {
+		width: 100%;
+		font-size: 12.5px;
+		line-height: 1.33;
+		padding: 16px 13px;
+		letter-spacing: 0px;
+	}
 }
 
-
-.btn-wide {
-  width: 100%;
-  font-size: 12.5px;
-  line-height: 1.33;
-  padding: 16px 13px;
-  letter-spacing: 0px;
-}
-
-}
 
 /* Landscape phone to portrait tablet */
+
 @media (min-width: 481px) and (max-width: 767px) {
-
-#be-the-first {
-      background-attachment: scroll;
-  }
-
+	#be-the-first {
+		background-attachment: scroll;
+	}
 }
 
 
 /* Portrait tablet to landscape and desktop */
+
 @media (min-width: 768px) and (max-width: 991px) {
-
-#be-the-first {
-      background-attachment: scroll;
-  }
-
+	#be-the-first {
+		background-attachment: scroll;
+	}
 }
 
 
 /* Desktops and laptops ----------- */
-@media (min-width: 992px) and (max-width: 1199px) {
 
-}
-
+@media (min-width: 992px) and (max-width: 1199px) {}
 
 
 /* Large screens ----------- */
-@media (min-width: 1200px) and (max-width: 3000px) {
 
-}
-
-
-
-
-
+@media (min-width: 1200px) and (max-width: 3000px) {}
