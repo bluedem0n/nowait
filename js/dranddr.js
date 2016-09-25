@@ -1,4 +1,6 @@
+
 contador = 0; // Variable global para tener poder poner un id unico a cada elemento cuando se clona.
+var arrastrable1 = document.getElementById("arrastrable1");
 		function start(e) {
 			e.dataTransfer.effecAllowed = 'move'; // Define el efecto como mover (Es el por defecto)
 			e.dataTransfer.setData("Data", e.target.id); // Coje el elemento que se va a mover
@@ -33,7 +35,6 @@ contador = 0; // Variable global para tener poder poner un id unico a cada eleme
 			}
 
 		}
-
 
 		/**
 		*
@@ -71,3 +72,9 @@ contador = 0; // Variable global para tener poder poner un id unico a cada eleme
 			document.getElementById(elementoArrastrado).style.left = x + "px";
 			document.getElementById(elementoArrastrado).style.top = y + "px";
 		}
+
+/* Eventos
+arrastrable1.addEventListener("dragstart",start());
+arrastrable1.addEventListener("dragend",end());
+
+	 */
