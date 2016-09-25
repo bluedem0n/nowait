@@ -9,16 +9,12 @@
   overflow: hidden;
   background-size: cover;
 }
-
-.listo {
-    position: absolute;
-    left: 0;
-    top: 400px;
-    right: 0;
-    height: 59px;
-    background-image: url(../img/listo.png);
-    background-position: 50% 0;
-    background-repeat: no-repeat;
+.juego1{
+    background: url(../img/juego_uno.png) no-repeat center center;
+    width: 239px;
+    height: 116px;
+    margin-top: 80px;
+    margin-right: -20px;
 }
 /* Menu */
 .menu-vertical a{
