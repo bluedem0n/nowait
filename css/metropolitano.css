@@ -29,7 +29,6 @@ h1 {
 h2 {
   font-size: 40px;
   line-height: 40px;
-  etter-spacing: -0.5px;
   color: #ffffff;
   font-weight: 700;
 }
@@ -72,17 +71,6 @@ p {
   background-color: #da2329;
   background-size: cover;
     
-}
-#loading .percentage {
-    position: absolute;
-    left: 50%;
-    margin-left: -273px;
-    top: 457px;
-    width: 546px;
-    border-top: 2px solid #f5f7cc;
-    color: #f5f7cc;
-    text-align: center;
-    padding-top: 35px;
 }
 #loading ul {
     position: absolute;
@@ -178,6 +166,7 @@ hr.line {
     top: 4px;
     width: 4px;
 }
+
 @keyframes scrolling {
 0% {
     opacity: 0;
@@ -205,9 +194,6 @@ hr.line {
   width: 60px;
   height: 60px;
   border: 2px solid #4ec3cd;
-  -moz-border-radius: 30px;
-  -o-border-radius: 30px;
-  -webkit-border-radius: 30px;
   border-radius: 30px;
   margin: auto;
 }

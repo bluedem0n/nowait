@@ -1,11 +1,14 @@
+window.onload = function(){
 var juego = document.getElementById("game");
 var loading = document.getElementById("loading");
-function loader(fin) {
-    var contenedor = document.querySelector('.load-contenedor'),
-    porcentaje = document.querySelector('.porcentaje'),
-    page = document.querySelector('.page');
-    contenedor.classList.add('visible');
-    page.classList.remove('visible');
+var play = document.getElementById("play");
+
+var loader = function(){
+    var contenedor = document.querySelector(".load-contenedor"),
+    porcentaje = document.querySelector(".porcentaje"),
+    page = document.querySelector(".page");
+    contenedor.classList.add("visible");
+    page.classList.remove("visible");
     var contador = 0,
         tiempo = setInterval(function() {
             contador = contador + 1;
@@ -17,10 +20,10 @@ function loader(fin) {
                 contador = 0;
                 loading.style.display = "none";
                 juego.style.display = "block";
-                if (fin){
-                  return fin; 
-                }
             }
-        }, 40);
+        }, 60);
 }
-juego.addEventListener("focus",loader(), true);
+/* Eventos */
+play.addEventListener("click",loader);
+
+}
