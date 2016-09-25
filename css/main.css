@@ -369,14 +369,74 @@ hr.line {
 
 /*---------------Drag and Drop-------------------*/
 
+#cuadro1{
+    position:absolute;
+    height: 100px;
+    z-index:0;
+    display: flex;
+    width: 45%;
+    margin-left: 20%;
+}
+
 .juego {
-    background: url("") #231f20 no-repeat center center fixed;
+    background: url("../img/armar/fondo_juego.png") no-repeat center center;
     min-height: 663px;
     background-color: #da2329;
     background-size: cover;
 }
+#cuadro1{
+    border: 3px solid transparent;
+}
 
+#cuadro2 {
+	width: 850px;
+    height: 420px;
+}
 
+.cuadradito {
+	width: 5px;
+	height: 5px;
+	padding: 0 10px 15px;
+	margin: 5px;
+}
+
+#arrastrable1 {
+	background-image: url("../img/armar/arma.png");
+	width: 250px;
+	height: 150px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#arrastrable2 {
+	background-image: url("../img/armar/calavera.png");
+	width: 50px;
+	height: 50px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#arrastrable3 {
+	background-image: url("../img/armar/mano.png");
+	width: 50px;
+	height: 50px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#arrastrable4 {
+	background-image: url("../img/armar/puas.png");
+	width: 50px;
+	height: 50px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#arrastrable5 {
+	background-image: url("../img/armar/puas2.png");
+	width: 50px;
+	height: 50px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 /* Footer */
 
 footer {

@@ -17,7 +17,7 @@
 		}
 
 		function enter(elemento) {
-			elemento.target.style.border = '3px dotted #555';
+			elemento.target.style.border = '2px dotted #da2329';
 		}
 
 		function leave(elemento) {
