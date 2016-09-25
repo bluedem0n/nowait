@@ -73,8 +73,23 @@ var arrastrable1 = document.getElementById("arrastrable1");
 			document.getElementById(elementoArrastrado).style.top = y + "px";
 		}
 
-/* Eventos
-arrastrable1.addEventListener("dragstart",start());
-arrastrable1.addEventListener("dragend",end());
 
-	 */
+//Conectamos los eventos
+//ondragover - Al mover sobre la lista
+document.getElementById('cuadro1').ondragenter = enter;
+document.getElementById('cuadro1').ondragover = over;
+document.getElementById('cuadro1').ondragleave = leave;
+document.getElementById('cuadro1').ondrop = drop;
+//ondragstart - Al empezar a arrastrar
+document.getElementById('arrastrable1').ondragstart = start;
+document.getElementById('arrastrable1').ondragend = end;
+//ondragstart - Al empezar a arrastrar
+document.getElementById('arrastrable2').ondragstart = start;
+document.getElementById('arrastrable2').ondragend = end;
+//ondragstart - Al empezar a arrastrar
+document.getElementById('arrastrable3').ondragstart = start;
+document.getElementById('arrastrable3').ondragend = end;
+//ondrop - Al soltar
+document.getElementById('cuadro2').ondrop = drop;
+document.getElementById('cuadro2').ondragover = over;
+document.getElementById('cuadro2').onleave = leave;
