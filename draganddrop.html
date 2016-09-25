@@ -1,38 +1,40 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-<meta charset="utf-8">
-<title>No wait</title>
-<link rel="icon" type="image/png" href="img/icono.png"/>
-<meta name="keywords" content="">
-<meta name="description" content="">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<!-- Bootstrap -->
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<!-- Estilos -->
-<link rel="stylesheet" href="css/animate.css">
-<link rel="stylesheet" href="css/metropolitano.css">
-<link rel="stylesheet" href="css/main.css">
-<link rel="stylesheet" href="css/utilities.css">
-<!-- Fuentes -->
-<link rel="stylesheet" href="css/font-awesome.min.css">
-<link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900|Montserrat:400,700' rel='stylesheet' type='text/css'>
+<html lang="es">
+
+<head>
+	<meta charset="utf-8">
+	<title>No wait</title>
+	<link rel="icon" type="image/png" href="img/icono.png" />
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Estilos -->
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/utilities.css">
+	<link rel="stylesheet" href="css/drag-drop.css">
 </head>
 <body>
-	<section class="page" id="game">
-		<div class="juego">
-			<div class="pad-xl">
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-8 col-sm-offset-2 text-center wow fadeIn" data-wow-delay="0.6s">
+	<header>
+		<h1 class="text-center"> Arma tu carro </h1>
+	</header>
 
-						</div>
-					</div>
-				</div>
+	<section>
+		<div id="cuadro1" ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return drop(event)">
+			<div class="cuadradito" id="arrastrable1" draggable="true" ondragstart="start(event)" ondragend="end(event)">
 			</div>
+			<div class="cuadradito" id="arrastrable2" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+			</div>
+			<div class="cuadradito" id="arrastrable3" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+			</div>
+		</div>
+		<div id="cuadro2" ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return drop(event)">
 		</div>
 	</section>
 	<script src="js/jquery-1.11.0.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/dranddr.js"></script>
 </body>
+
 </html>
