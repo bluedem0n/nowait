@@ -225,40 +225,39 @@ nav ul li span {
 }
 
 /* Seccion Loading */
-#loading {
-  background: url() #231f20 no-repeat center center fixed;
+.loader {
+  background: url("") #231f20 no-repeat center center fixed;
   min-height: 663px;
   background-color: #da2329;
   background-size: cover;
 
 }
-#loading ul {
+.loader ul {
     position: absolute;
-    left: 0;
-    top: 570px;
-    right: 0;
+    margin-top: 35%;
+    margin-left: 12%;
 }
-#loading li {
+.loader li {
+    list-style: none;
+    background-repeat: no-repeat;
     width: 320px;
     height: 105px;
+    left: 0;
     float: left;
-    padding-left: 120px;
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    padding-top: 20px;
-    list-style: none;
+    text-align: center;
+       
 }
-#loading li:nth-child(1) {
+.loader li:nth-child(1) {
     background-image: url(../img/mouse.png);
 }
-#loading li:nth-child(2) {
+.loader li:nth-child(2) {
     background-image: url(../img/zombies.png)
 }
-#loading li:nth-child(3) {
+.loader li:nth-child(3) {
     background-image: url(../img/clock.png);
 }
 
-#loading .listo {
+.loader .listo {
     position: absolute;
     left: 0;
     top: 372px;
@@ -315,23 +314,6 @@ hr.line {
 /*---------------Drag and Drop-------------------*/
 
 
-/* ==========================================================================
-   Formulario de Invitar
-   ========================================================================== */
-.form-control {
-    background-color: #FFFFFF;
-    background-image: none;
-    border: 0px solid transparent;
-    border-radius: 4px;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
-    color: #929496;
-    display: block;
-    font-size: 15px;
-    height: 60px;
-    line-height: 1.42857;
-    padding: 6px 12px;
-    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
-}
 
 /* Footer */
 

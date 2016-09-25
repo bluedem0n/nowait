@@ -21,7 +21,7 @@ var loader = function(){
                 loading.style.display = "none";
                 juego.style.display = "block";
             }
-        }, 60);
+        }, 40);
 }
 /* Eventos */
 play.addEventListener("click",loader);
