@@ -86,23 +86,53 @@
 	<section class="page" id="game">
 		<div class="juego">
 			<div class="pad-xl">
-            <div class="container">
-            <div id="cuadro2"></div>
-            <div id="cuadro1" class="pull-center">
-                        <div class="cuadradito" id="arrastrable1" draggable="true"></div>
-                        <div class="cuadradito" id="arrastrable2" draggable="true"></div>
-                        <div class="cuadradito" id="arrastrable3" draggable="true"></div>
-                        <div class="cuadradito" id="arrastrable4" draggable="true"></div>
-            </div>
-            </div>
-            </div>
+           		<div class="container">
+           			 <div id="cuadro2"></div>
+           					<div id="cuadro1" class="pull-center">
+		                        <div class="cuadradito" id="arrastrable1" draggable="true"></div>
+		                        <div class="cuadradito" id="arrastrable2" draggable="true"></div>
+		                        <div class="cuadradito" id="arrastrable3" draggable="true"></div>
+		                        <div class="cuadradito" id="arrastrable4" draggable="true"></div>
+           					</div>
+            			</div>
+           			</div>
 		</div>
 	</section>
 	<section class="formulario">
 			<div class="container">
 				<div class="row">
-					<h1>Titulo de formulario</h1>
 					<div class="col-sm-8 col-sm-offset-2 text-center wow fadeIn" data-wow-delay="0.6s">
+						<form>
+				          <h2>
+				            Contactanos
+				          </h2>
+				          <div>
+				            <label for="name" class="nombre">NOMBRE :&nbsp</label>
+				            <input type="text" id="name" placeholder="&nbsp Ingrese su nombre"><br><br>
+				          </div>
+				          <div>
+				            <label for="lastname" class="apellido">APELLIDO :&nbsp</label>
+				            <input type="text" id="lastname" placeholder="&nbsp Ingrese su apellido"><br><br>
+				          </div>
+				          <div>
+				            <label for="inputEmail" class="correo">E-MAIL :&nbsp&nbsp&nbsp&nbsp</label>
+				            <input type="email" id="input-email" placeholder="&nbsp Ingrese su correo electrónico" autofocus=""><br><br>
+				          </div>
+				          <div>
+				            <label for="inputPassword" class="pass">
+				              CLAVE :&nbsp&nbsp&nbsp&nbsp
+				            </label>
+				            <input type="password" id="input-password" placeholder="&nbsp Ingrese su contraseña"><br><br>
+				          </div>
+				          <div>
+				            <select>
+				              <option value="0">Selecciona se sexo</option>
+				              <option value="femenino">Femenino</option>
+				              <option value="masculino">Masculino</option>
+				            </select>
+					      </div>
+					      <button type="submit">Registrar</button>
+				        </form>
 					</div>
 				</div>	
 			</div>
