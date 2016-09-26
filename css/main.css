@@ -154,7 +154,23 @@ p {
     animation: bounceInUp 3s;
 }
 
-
+.logo-uno{
+	margin-top: 180px;
+	margin-left: -40px;
+	 position: relative;
+    -webkit-animation: bounceInLeft 3s;
+    animation: bounceInLeft 3s;
+	width: 400px;
+	height: 300px;
+}
+.donde {
+	 position: relative;
+	margin-right: 60px;
+    -webkit-animation: bounceInUp 3s;
+    animation: bounceInUp 3s;
+	width: 250px;
+	height: 80px;
+}
 /* Menu */
 
 .menu-vertical a {
@@ -369,13 +385,66 @@ hr.line {
 
 /*---------------Drag and Drop-------------------*/
 
+#cuadro1{
+    border: 3px solid transparent;
+    position: absolute;
+    height: 198px;
+    width: auto;
+    display: flex;
+    width: 54%;
+    margin-left: 17%;
+    margin-top: -15px;
+}
+
 .juego {
-    background: url("") #231f20 no-repeat center center fixed;
-    min-height: 663px;
+    background: url("../img/armar/fondo_juego.png") no-repeat center center;
+    min-height: 680px;
     background-color: #da2329;
     background-size: cover;
 }
+#cuadro2 {
+	height: 420px;
+    width: 900px;
+    margin-left: 300px;
+}
 
+.cuadradito {
+	width: 100px;
+	height: 50px;
+	padding: 0 10px 15px;
+	margin: 5px;
+}
+
+#arrastrable1 {
+	background-image: url("../img/armar/arma.png");
+	width: 180px;
+	height: 80px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#arrastrable2 {
+	background-image: url("../img/armar/calavera.png");
+	width: 130px;
+	height: 160px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#arrastrable3 {
+	background-image: url("../img/armar/mano.png");
+    width: 120px;
+	height: 160px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#arrastrable4 {
+	background-image: url("../img/armar/puas2.png");
+	width: 230px;
+	height: 100px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 
 /* Footer */
 
