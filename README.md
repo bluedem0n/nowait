@@ -44,6 +44,7 @@ Se pensó en realizar la aplicación a nivel de Movil, nuestros prototipos inici
 - [Directorios y archivos](#directorios-y-archivos)
 - [Pagina Principal](#principal)
 - [Pagina Metropolitano](#pagina-metropolitano)
+- [Loading](#loading)
 - [Drag and Drop](#drag-and-drop)
 - [Juego en Phaser](#juego)
 - [Formulario](#formulario)
@@ -94,16 +95,18 @@ nowait/
 
 ![](http://s21.postimg.org/kl2l6xi13/2.png)
 
+## Loading
+
+![](http://s21.postimg.org/yss9vkupz/3.png)
 
 ## Drag and Drop
 
-![](http://s21.postimg.org/yss9vkupz/3.png)
+![](http://s21.postimg.org/s3lqfk9dz/4.png)
 
 
 ## Juego
 
-![](http://s21.postimg.org/s3lqfk9dz/4.png)
-
+![](http://s21.postimg.org/f201ppkzr/6.png)
 
 ## Formulario
 
@@ -111,5 +114,6 @@ nowait/
 
 ## Redes Sociales
 
-![](http://s21.postimg.org/f201ppkzr/6.png)
+![](http://s21.postimg.org/ubzwwwghz/7.png)
+
 
