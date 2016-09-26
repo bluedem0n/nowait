@@ -57,41 +57,73 @@
 	<div class="mouse-icon hidden-xs">
 		<div class="scroll"></div>
 	</div>
-	 <section id="loading" class="loader" class="pad-xl">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-8 col-sm-offset-2 text-center margin-30">
-            <h2 class="titulo-load wow fadeIn" data-wow-delay="0.1s">Loading...</h2>
-            <div class="iphone" data-wow-delay="1s">
-	        <img src="img/iphone.png">
-        	</div>
-           	<div class="load-contenedor">
-            	<p class="lead porcentaje">100%</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+	<section id="loading" class="loader" class="pad-xl">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-8 col-sm-offset-2 text-center margin-30">
+					<h2 class="titulo-load wow fadeIn" data-wow-delay="0.1s">Loading...</h2>
+					<div class="iphone" data-wow-delay="1s">
+						<img src="img/iphone.png">
+					</div>
+					<div class="load-contenedor">
+						<p class="lead porcentaje">100%</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 	<section class="page" id="game">
 		<div class="juego">
 			<div class="pad-xl">
-            <div class="container">
-            <div id="cuadro2"></div>
-            <div id="cuadro1" class="pull-center">
-                        <div class="cuadradito" id="arrastrable1" draggable="true"></div>
-                        <div class="cuadradito" id="arrastrable2" draggable="true"></div>
-                        <div class="cuadradito" id="arrastrable3" draggable="true"></div>
-                        <div class="cuadradito" id="arrastrable4" draggable="true"></div>
-            </div>
-            <div class="text-right btn btn-secondary btnizq">
-				<a href="#gameCar" class="btn btn-secondary" id="play">Go</a>
+				<div class="container">
+					<div id="cuadro2"></div>
+					<div id="cuadro1" class="pull-center">
+						<div class="cuadradito" id="arrastrable1" draggable="true"></div>
+						<div class="cuadradito" id="arrastrable2" draggable="true"></div>
+						<div class="cuadradito" id="arrastrable3" draggable="true"></div>
+						<div class="cuadradito" id="arrastrable4" draggable="true"></div>
+					</div>
+					<div class="text-right btn btn-secondary btnizq">
+						<a href="#gameCar" class="btn btn-secondary" id="play">Go</a>
+					</div>
+				</div>
 			</div>
-            </div>
-            </div>
 		</div>
 	</section>
 	<section id="gameCar" class="carro">
-		 <div id="gameContainer"></div>
+		<div id="gameContainer"></div>
+	</section>
+	<section class="formulario">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-8 col-sm-offset-2 text-center wow fadeIn" data-wow-delay="0.6s">
+					<form>
+						<h2>
+							Registrate
+						</h2>
+						<div>
+							<label for="name" class="nombre">NOMBRE :</label>
+							<input type="text" id="name" placeholder=" Ingrese su nombre"><br><br>
+						</div>
+						<div>
+							<label for="lastname" class="apellido">APELLIDO :</label>
+							<input type="text" id="lastname" placeholder=" Ingrese su apellido"><br><br>
+						</div>
+						<div>
+							<label for="inputEmail" class="correo">E-MAIL :</label>
+							<input type="email" id="input-email" placeholder=" Ingrese su correo electrónico"><br><br>
+						</div>
+						<div>
+							<label for="inputPassword" class="pass">
+								CLAVE :
+							</label>
+							<input type="password" id="input-password" placeholder=" Ingrese su contraseña"><br><br>
+						</div>
+						<button id="enviar" type="submit">Registrar</button>
+					</form>
+				</div>
+			</div>
+		</div>
 	</section>
 	<footer>
 		<div class="container">
@@ -107,19 +139,21 @@
 				<div class="col-sm-4 text-right">
 					<p><small>Copyright &copy; 2016. All rights reserved. <br>
 						Created by <a href="">Ateneas</a></small></p>
-				</div>
+					</div>
 				</div>
 			</div>
-    </footer>
+		</footer>
 		<script type="text/javascript" src="js/app.js"></script>
 		<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/wow.min.js"></script>
 		<script type="text/javascript" src="js/modernizr-2.7.1.js"></script>
 		<script type="text/javascript" src="js/phaser.min.js"></script>
-    	<script type="text/javascript" src="js/Boot.js"></script>
-    	<script type="text/javascript" src="js/Preloader.js"></script>
-    	<script type="text/javascript" src="js/Game.js"></script>
-</body>
-</html>
+		<script type="text/javascript" src="js/Boot.js"></script>
+		<script type="text/javascript" src="js/Preloader.js"></script>
+		<script type="text/javascript" src="js/Game.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+		<script type="text/javascript" src="js/sweetalert-dev.js"></script>
+	</body>
+	</html>
 
