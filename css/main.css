@@ -154,7 +154,23 @@ p {
     animation: bounceInUp 3s;
 }
 
-
+.logo-uno{
+	margin-top: 180px;
+	margin-left: -40px;
+	 position: relative;
+    -webkit-animation: bounceInLeft 3s;
+    animation: bounceInLeft 3s;
+	width: 400px;
+	height: 300px;
+}
+.donde {
+	 position: relative;
+	margin-right: 60px;
+    -webkit-animation: bounceInUp 3s;
+    animation: bounceInUp 3s;
+	width: 250px;
+	height: 80px;
+}
 /* Menu */
 
 .menu-vertical a {
