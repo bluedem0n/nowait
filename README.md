@@ -42,12 +42,12 @@ Se pensó en realizar la aplicación a nivel de Movil, nuestros prototipos inici
 ## Indice
 
 - [Directorios y archivos](#directorios-y-archivos)
-- [](#version-1)
-- [](#version-2)
-- [](#version-3)
-- [](#version-4)
-- [](#version-5)
-- [](#version-6)
+- [Pagina Principal](#principal)
+- [Pagina Metropolitano](#pagina-metropolitano)
+- [Drag and Drop](#drag-and-drop)
+- [Juego en Phaser](#juego)
+- [Formulario](#formulario)
+- [Redes Sociales](#redes-sociales)
 
 ## Directorios y Archivos
 
@@ -84,4 +84,32 @@ nowait/
 └── assets/
 
 ```
+
+## Principal
+
+![](http://s21.postimg.org/gajbxlnk7/1.png)
+
+
+## Pagina Metropolitano
+
+![](http://s21.postimg.org/kl2l6xi13/2.png)
+
+
+## Drag and Drop
+
+![](http://s21.postimg.org/yss9vkupz/3.png)
+
+
+## Juego
+
+![](http://s21.postimg.org/s3lqfk9dz/4.png)
+
+
+## Formulario
+
+![](http://s21.postimg.org/5g6h9ettz/5.png)
+
+## Redes Sociales
+
+![](http://s21.postimg.org/f201ppkzr/6.png)
 
