@@ -106,6 +106,15 @@ window.onload = function() {
 			document.getElementById(elementoArrastrado).style.left = x + "px";
 			document.getElementById(elementoArrastrado).style.top = y + "px";
 		}
+			var form = document.getElementById("form");
+			var input = document.getElementsByTagName("input");
+
+			form.addEventListener("focus", function(event) {
+			  event.target.style.background = "white";
+			}, true);
+			form.addEventListener("blur", function(event) {
+			  event.target.style.background = "";
+			}, true);
 
 			/* Alertas */
 			var enviar = document.getElementById("enviar");
@@ -113,6 +122,16 @@ window.onload = function() {
 			        event.preventDefault();
 			    swal("¡Bienvenido!", "No Wait te sorprenderá", "success");
 			});
+
+        var formulario = document.getElementsByClassName("form-clear");
+
+        for(var i = 0; i < formulario.length; i++){
+          formulario[i].value = "";
+        }
+        //focus
+        for(var i = 0; i < formulario.length; i++){
+            formulario[i].focus();
+        }
 
 		/* Eventos */
 		play.addEventListener("click", loader);
