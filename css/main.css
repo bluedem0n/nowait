@@ -411,6 +411,11 @@ hr.line {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+.btnizq{
+	display: inline-block;
+	float: right;
+	width: 10%;
+}
 
 /*---------------Juego Carrito-------------------*/
 .carro{

@@ -1,4 +1,4 @@
-window.onload = function() {
+
     var juego = document.getElementById("game");
     var loading = document.getElementById("loading");
     var play = document.getElementById("play");
@@ -26,4 +26,4 @@ window.onload = function() {
         /* Eventos */
     play.addEventListener("click", loader);
 
-}
+
