@@ -293,49 +293,21 @@ nav ul li span {
 /* Seccion Loading */
 
 .loader {
-    background: url("") #231f20 no-repeat center center fixed;
-    min-height: 663px;
+    min-height: 680px;
     background-color: #da2329;
     background-size: cover;
 }
-
-.loader ul {
-    position: absolute;
-    margin-top: 35%;
-    margin-left: 12%;
+.titulo-load{
+	padding-top: 70px;
 }
 
-.loader li {
-    list-style: none;
-    background-repeat: no-repeat;
-    width: 320px;
-    height: 105px;
-    left: 0;
-    float: left;
-    text-align: center;
-}
-
-.loader li:nth-child(1) {
-    background-image: url(../img/mouse.png);
-}
-
-.loader li:nth-child(2) {
-    background-image: url(../img/zombies.png)
-}
-
-.loader li:nth-child(3) {
-    background-image: url(../img/clock.png);
-}
-
-.loader .listo {
-    position: absolute;
-    left: 0;
-    top: 372px;
-    right: 0;
-    height: 59px;
-    background-image: url(../img/listo.png);
-    background-position: 50% 0;
-    background-repeat: no-repeat;
+.lead {
+  font-size: 21px;
+  line-height: 26px;
+  color: #ffffff;
+  font-weight: 600;
+  font-family: 'Raleway', sans-serif;
+  position: relative;
 }
 
 hr.line {
@@ -354,26 +326,21 @@ hr.line {
     left: 0;
     right: 0;
     width: 100%;
-    max-width: 300px;
+    max-width: 250px;
 }
 
 .load-contenedor {
-    width: 100vw;
-    height: 100vh;
+	margin-left: 23%;
     visibility: hidden;
-    transition: all 0.6s ease;
 }
 
 .porcentaje {
     width: 4em;
     height: 4em;
-    margin-left: 20%;
-    line-height: 4em;
+    margin-left: 22%;
+    line-height: 3.5em;
     text-align: center;
-    font-size: 3.5em;
-    font-family: monospace;
-    font-weight: 300;
-    color: white;
+    font-size: 3.2em;
 }
 
 .visible {
