@@ -17,19 +17,26 @@ Se realizó una encuesta a 60 personas de Lima entre hombres y mujeres.
 	![edades.png](http://s21.postimg.org/b77egua5z/edades.png)
 
 - #### Uso del celular : 
+
 	Tenemos probabilidades de tener exito en Aplicaciones moviles  
 	![](http://s21.postimg.org/jtao1fm5z/uso_celular.png)  
+	
 - #### Lugares donde se espera más tiempo en Lima :  
+
 	Entre los más botados salieron Estaciones de Metropolitano , Hospital Essalud y Centros de Atención al cliente  
 	![](http://s21.postimg.org/nacq4el87/lugares.png) 
+	
 - #### Tolerancia de las personas al momento de esperar en algun lugar:  
+
 	el mayor porcentaje esta entre 1-2-3 donde tres es tolerancia media , dos es casi nada  y 1 es no tolero esperar.
 	![](http://s21.postimg.org/k4s4e72lz/tolerar.png)
 	
 ## Planificación del Proyecto
+
 	Se realizó mediante la metodología Scrum para desarrollo ágil.
 	
 	### [Ir al Taiga](https://pr.to/GT1N6S/)
+	
 
 ## Wireframes
 
