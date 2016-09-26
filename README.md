@@ -58,19 +58,19 @@ nowait/
 ├── css/
 │   ├── animate.css
 │   ├── bootstrap.min.css
-│ 	├── font.awesome.min.css
-│ 	├── main.css
-│ 	├── queries.css
+│   ├── font.awesome.min.css
+│   ├── main.css
+│   ├── queries.css
 │   ├── sweetalert.css
 │   └── utilities.css
 └── js/
 │   ├── app.js
 │   ├── Boot.js
 │   ├── bootstrap.min.js
-│	├── Game.js
-│	├── jquery-1.11.0.min.js
-│	├── jquery.easing.min.js
-│	├── modernizr-2.7.1.js		  
+│   ├── Game.js
+│   ├── jquery-1.11.0.min.js
+│   ├── jquery.easing.min.js
+│   ├── modernizr-2.7.1.js		  
 │   ├── phaser.min.js
 │   ├── Preloader.js
 │   ├── sweetalert-dev.js
