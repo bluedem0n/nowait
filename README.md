@@ -19,6 +19,7 @@ Se realizó una encuesta a 60 personas de Lima entre hombres y mujeres.
 - #### Uso del celular : 
 
 	Tenemos probabilidades de tener exito en Aplicaciones moviles  
+	
 	![](http://s21.postimg.org/jtao1fm5z/uso_celular.png)  
 	
 - #### Lugares donde se espera más tiempo en Lima :  
