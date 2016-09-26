@@ -348,6 +348,7 @@ hr.line {
     opacity: 1 !important;
     transition: all 0.6s ease;
 }
+
 /*---------------Drag and Drop-------------------*/
 
 #cuadro1{
@@ -409,6 +410,20 @@ hr.line {
 	height: 100px;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+/*---------------Juego Carrito-------------------*/
+.carro{
+	margin: 0 auto;
+    height: 600px;
+    width: 400px;
+    border: 2px solid #4267B2;
+}
+#gameContainer {
+  margin: 10px auto 0 auto;
+  height: 600px;
+  width: 400px;
+  border: 2px solid #4267B2;
 }
 
 /* Footer */
