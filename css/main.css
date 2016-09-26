@@ -348,6 +348,11 @@ hr.line {
     opacity: 1 !important;
     transition: all 0.6s ease;
 }
+.gif-load{
+	width: 137px !important;
+    height: 28px;
+    margin-top: 27% !important;
+}
 
 /*---------------Drag and Drop-------------------*/
 

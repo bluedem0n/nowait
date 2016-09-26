@@ -29,7 +29,7 @@ window.onload = function() {
 				loading.style.display = "none";
 				juego.style.display = "block";
 			}
-		}, 40);
+		},40);
 	}
 
 	/* Variables Drag and Drop */
