@@ -33,11 +33,6 @@ Se realizó una encuesta a 60 personas de Lima entre hombres y mujeres.
 	
 ## Planificación del Proyecto
 
-	Se realizó mediante la metodología Scrum para desarrollo ágil.
-	
-	### [Ir al Taiga](https://pr.to/GT1N6S/)
-	
-
 ## Wireframes
 
 Se pensó en realizar la aplicación a nivel de Movil, nuestros prototipos iniciales se realizaron en proto.io
@@ -46,7 +41,7 @@ Se pensó en realizar la aplicación a nivel de Movil, nuestros prototipos inici
 
 ## Indice
 
-- [](#directorios-y-archivos)
+- [Directorios y archivos](#directorios-y-archivos)
 - [](#version-1)
 - [](#version-2)
 - [](#version-3)
