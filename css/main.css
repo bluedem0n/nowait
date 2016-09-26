@@ -439,22 +439,24 @@ hr.line {
 
 .formulario{
     min-height: 663px;
-    background-color: #da2329;
+    background-color: #c7d8e3;
     background-size: cover;
 }
 form{
     background-color: #131F39;
-    height: 450px;
+    height: 520px;
     width: 600px;
     margin-top: 100px;
     margin-left: 50px;
     padding-top: 30px;
     border-radius: 15px;
+    text-align: left;
+    padding-left: 200px;
 }
 input{
     background-color: #131F39;
     border-color: : #5C6375 1px ;
-    border-radius: 15px;
+    border-radius: 5px;
     width: 200px;
     height: 35px;
     color : #B1BFCC;
@@ -469,7 +471,7 @@ h2{
 }
 button{
     height: 30px;
-    width: 280px;
+    width: 200px;
     border-radius: 5px;
     background-color: #da2329;
     color:white;
