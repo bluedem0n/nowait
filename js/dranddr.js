@@ -4,6 +4,7 @@
     var arrastrable1 = document.getElementById("arrastrable1");
     var arrastrable2 = document.getElementById("arrastrable2");
     var arrastrable3 = document.getElementById("arrastrable3");
+    var arrastrable4 = document.getElementById("arrastrable4");
 
 		function start(elemento) {
 			elemento.dataTransfer.effecAllowed = 'move';
@@ -81,6 +82,9 @@
 
     arrastrable3.ondragstart = start;
     arrastrable3.ondragend = end;
+
+    arrastrable4.ondragstart = start;
+    arrastrable4.ondragend = end;
 
     cuadro2.ondrop = drop;
     cuadro2.ondragover = over;
