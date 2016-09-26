@@ -4,7 +4,7 @@ ZombiesGame.Boot = function (game) {};
 
 ZombiesGame.Boot.prototype = {
 
-  init: function () {},
+  app: function () {},
 
   preload: function () {
     this.load.image('preloaderBar', "assets/preloader.png");

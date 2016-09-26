@@ -95,7 +95,7 @@ p {
 .mouse-icon .scroll {
     animation-delay: 0s;
     animation-duration: 1s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infappe;
     animation-name: scrolling;
     animation-play-state: running;
     animation-timing-function: linear;
@@ -430,6 +430,46 @@ hr.line {
   border: 2px solid #4267B2;
 }
 
+/* Formulario */
+
+.formulario{
+    min-height: 663px;
+    background-color: #da2329;
+    background-size: cover;
+}
+form{
+    background-color: #131F39;
+    height: 450px;
+    width: 600px;
+    margin-top: 100px;
+    margin-left: 50px;
+    padding-top: 30px;
+    border-radius: 15px;
+}
+input{
+    background-color: #131F39;
+    border-color: : #5C6375 1px ;
+    border-radius: 15px;
+    width: 200px;
+    height: 35px;
+    color : #B1BFCC;
+    font-size: 12px;
+}
+label{
+    color:white;
+}
+h2{
+
+    margin-bottom: 40px;
+}
+button{
+    height: 30px;
+    width: 280px;
+    border-radius: 5px;
+    background-color: #da2329;
+    color:white;
+
+}
 /* Footer */
 
 footer {
