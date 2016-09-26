@@ -14,7 +14,9 @@ window.onload = function() {
 	var loader = function() {
 		var contenedor = document.querySelector(".load-contenedor"),
 		porcentaje = document.querySelector(".porcentaje"),
+		// Hace referencia a mi siguiente contenedor
 		page = document.querySelector(".page");
+		// Visible hace que el porcentaje aparezca en contenedor
 		contenedor.classList.add("visible");
 		page.classList.remove("visible");
 		var contador = 0,
@@ -41,13 +43,15 @@ window.onload = function() {
 	var arrastrable4 = document.getElementById("arrastrable4");
 
 	function start(elemento) {
-		elemento.dataTransfer.effecAllowed = 'move';
-		elemento.dataTransfer.setData("data", elemento.target.id);
-		elemento.dataTransfer.setDragImage(elemento.target, 0, 0);
+		elemento.dataTransfer.effecAllowed = "move"; // Define el efecto como mover (Es el por defecto)
+		elemento.dataTransfer.setData("data", elemento.target.id); // Coje el elemento que se va a mover
+		elemento.dataTransfer.setDragImage(elemento.target, 0, 0); // Define la imagen que se vera al ser arrastrado el elemento y por donde se coje el elemento que se va a mover (el raton aparece en la esquina sup_izq con 0,0)
+		// Le da opacidad al contenedor del elemento
 		elemento.target.style.opacity = '0.4';
 	}
+	// Soltar el elemento dentro del contenedor 2
 	function end(elemento){
-		elemento.target.style.opacity = '';
+		elemento.target.style.opacity = ''; // Pone la opacidad del elemento a 1
 		elemento.dataTransfer.clearData("data");
 	}
 
@@ -60,15 +64,15 @@ window.onload = function() {
 	}
 
 	function over(elemento) {
-		var elemArrastrable = elemento.dataTransfer.getData("data");
-		var id = elemento.target.id;
-
-		if (id == 'cuadro1'){
-			return false;
+		var elemArrastrable = elemento.dataTransfer.getData("data"); // Elemento arrastrado
+		var id = elemento.target.id; // Elemento sobre el que se arrastra
+		// return false para que se pueda soltar
+		if (id == 'cuadro1'){ // donde estan los objetos del metropolitano
+			return false;  // Cualquier elemento se puede soltar sobre el div destino 1
 		}
 
-		if ((id == 'cuadro2') && (elemArrastrable != 'arrastrable3')){
-			return false;
+		if (id == 'cuadro2'){ // bus
+			return false; // En el cuadro2 se puede soltar cualquier elemento menos el elemento con id=arrastrable3
 		}
 
 	}
@@ -85,10 +89,11 @@ window.onload = function() {
 
 			posXCont = $('#'+elemento.target.id).position().left;
 			posYCont = $('#'+elemento.target.id).position().top;
-
+			// Posicion absoluta del raton
 			x = elemento.layerX;
 			y = elemento.layerY;
 
+		// Si parte del elemento que se quiere mover se queda fuera se cambia las coordenadas para que no sea asi
 			if (posXCont + tamContX <= x + tamElemX){
 				x = posXCont + tamContX - tamElemX;
 			}
