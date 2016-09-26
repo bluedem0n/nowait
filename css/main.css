@@ -454,9 +454,12 @@ hr.line {
 }
 form{
     background-color: #131F39;
-    height: 400px;
+    height: 450px;
     width: 600px;
     margin-top: 100px;
+    margin-left: 50px;
+    padding-top: 30px;
+    border-radius: 15px;
 }
 input{
     background-color: #131F39;
@@ -471,6 +474,15 @@ label{
     color:white;
 }
 h2{
+
+    margin-bottom: 40px;
+}
+button{
+    height: 30px;
+    width: 280px;
+    border-radius: 5px;
+    background-color: #da2329;
+    color:white;
 
 }
 /* Footer */
