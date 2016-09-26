@@ -1,6 +1,6 @@
 # No Wait
 
-## Breve Descripción
+## Breve Descripción:
 
 Proyecto Web No Wait hecho en HTML5 CSS3 JAVASCRIPT , Utilizando el framework Phaser para la creacion de videojuegos , El plugin Wow.js para interacciones animadas y a su mejor amigo Animate.css , librería de CSS3 para animaciones simples y rápidas.
 No Wait tiene como ojetivo que no te aburras esperando.Te transporta a la temática del lugar en el que te encuentres mediante un videojuego en el que ganas puntos y lo mejor de todo que recibirás premios , ahora no será tan aburrido esperar.
