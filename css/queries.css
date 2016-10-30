@@ -6,6 +6,29 @@
 /* Landscape phones and down */
 
 @media (max-width: 480px) {
+	header {
+		background: url(../img/background_responsive.png) no-repeat center center;
+		padding: 20px 10px 60px 10px;
+		height: 100vh;
+		overflow: hidden;
+		background-size: cover;
+	}
+	.logo-uno {
+		display: none;
+	}
+	.donde {
+		display: none;
+	}
+	.juego1 {
+		display: none;
+	}
+	.metro-res {
+		display: block;
+		position: absolute;
+		bottom: 14em;
+		left: 7.2em;
+		max-width: 48%;
+	}
 	.btn-lg {
 		font-size: 12.5px;
 		line-height: 1.33;

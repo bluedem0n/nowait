@@ -139,7 +139,9 @@ p {
     overflow: hidden;
     background-size: cover;
 }
-
+.metro-res{
+    display: none;
+}
 .juego1 {
     background: url(../img/juego_uno.png) no-repeat center center;
     width: 239px;
