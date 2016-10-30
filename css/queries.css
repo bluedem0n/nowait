@@ -52,6 +52,33 @@
 /* Landscape phone to portrait tablet */
 
 @media (min-width: 481px) and (max-width: 767px) {
+	header {
+		background: url(../img/background_responsive.png) no-repeat center center;
+		padding: 20px 10px 60px 10px;
+		height: 100vh;
+		overflow: hidden;
+		background-size: cover;
+	}
+	.logo-uno {
+		display: none;
+	}
+	.donde {
+		display: none;
+	}
+	.juego1 {
+		display: none;
+	}
+	.metro-res {
+		display: block;
+		position: absolute;
+		bottom: 14em;
+		left: 7.2em;
+		max-width: 48%;
+	}
+	.metropologo {
+		max-width: 100%;
+		margin-left: 1em;
+	}
 	#be-the-first {
 		background-attachment: scroll;
 	}
