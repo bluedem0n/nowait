@@ -46,6 +46,32 @@
 		padding: 16px 13px;
 		letter-spacing: 0px;
 	}
+	.menu-vertical {
+		display: none;
+	}
+	#gameCar {
+		display: none;
+	}
+	#game {
+		display: none;
+	}
+	.gif-load {
+		margin-top: 53% !important;
+	}
+	.porcentaje {
+		margin-left: 10%;
+	}
+	form {
+		background-color: #131F39;
+		height: 520px;
+		width: 330px;
+		margin-top: 68px;
+		margin-left: 32px;
+		padding-top: 30px;
+		border-radius: 15px;
+		text-align: left;
+		padding-left: 62px;
+	}
 }
 
 
@@ -78,6 +104,32 @@
 	.metropologo {
 		max-width: 100%;
 		margin-left: 1em;
+	}
+	.menu-vertical {
+		display: none;
+	}
+	#gameCar {
+		display: none;
+	}
+	#game {
+		display: none;
+	}
+	.porcentaje {
+		margin-left: 10%;
+	}
+	.gif-load {
+		margin-top: 53% !important;
+	}
+	form {
+		background-color: #131F39;
+		height: 520px;
+		width: 330px;
+		margin-top: 68px;
+		margin-left: 32px;
+		padding-top: 30px;
+		border-radius: 15px;
+		text-align: left;
+		padding-left: 62px;
 	}
 	#be-the-first {
 		background-attachment: scroll;
